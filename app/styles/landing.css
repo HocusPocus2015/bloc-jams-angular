@@ -1,6 +1,8 @@
+/*
 body.landing {
   background-color: rgb(58,23,63);
 }
+*/
  
 .hero-content {
   position: relative;
@@ -69,8 +71,6 @@ body.landing {
   color: rgb(233,50,117);
   font-size: 5rem;
 }
-
-
 
 .ion-music-note:hover {
   position: relative;
