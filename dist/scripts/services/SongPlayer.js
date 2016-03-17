@@ -43,6 +43,16 @@
       song.playing = true;
     };
 /**
+*PUBLIC
+* @function stopSong
+* @desc stop the song
+* @params {Object} song
+*/
+    var stopSong = function(song) {
+      currentBuzzObject.stop();
+      song.playing = null;
+    };
+/**
 PUBLIC
 * @function getSongIndex
 * @desc get index of song
@@ -108,7 +118,25 @@ PUBLIC
         playSong(song);
       }
     };
-    
+/**
+*PUBLIC
+* @function SongPlayer.next
+* @desc set song to next
+*/
+    SongPlayer.next = function() {
+      var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+      currentSongIndex++;
+      
+      var lastSongIndex = currentSongIndex.songs.length -1;
+      if (currentSongIndex > lastSongIndex) {
+        stopSong(SongPlayer.currentSong);
+      }
+      else {
+        var song = currentAlbum.songs[currentSongIndex];
+        setSong(song);
+        playSong(song);
+      }
+    };
     return SongPlayer;
   }
   angular
