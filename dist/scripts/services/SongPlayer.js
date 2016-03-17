@@ -106,7 +106,7 @@ PUBLIC
 * @desc set song to previous
 */
     SongPlayer.previous = function() {
-      var currentSongIndex = getSongIndex(SongPlayer.currentSong):
+      var currentSongIndex = getSongIndex(SongPlayer.currentSong);
       currentSongIndex--;
       if (currentSongIndex < 0) {
         currentBuzzObject.stop();
