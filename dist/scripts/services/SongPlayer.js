@@ -2,21 +2,21 @@
   function SongPlayer(Fixtures) {
     var SongPlayer = {};
 /**
-*PRIVATE
+*
 * @desc current album
 * @type {object}
 */
     var currentAlbum = Fixtures.getAlbum();
 
 /**
-*PRIVATE
+*
 * @desc current Buzz audio file
 * @type {Object}
 */
     var currentBuzzObject = null;
     
 /**
-*PUBLIC
+*
 * @function setSong
 * @desc Stops currently playing song and loads new audio file as currentBuzzObject
 * @param {Object} song
@@ -33,7 +33,7 @@
       SongPlayer.currentSong = song;
     };
 /**
-*PUBLIC
+*
 * @function playSong
 * @desc play song
 * @param {Object} song
@@ -43,7 +43,7 @@
       song.playing = true;
     };
 /**
-*PUBLIC
+*
 * @function stopSong
 * @desc stop the song
 * @params {Object} song
@@ -53,7 +53,7 @@
       song.playing = null;
     };
 /**
-PUBLIC
+
 * @function getSongIndex
 * @desc get index of song
 * param {Object} song
@@ -63,14 +63,14 @@ PUBLIC
     };
     
 /**
-*PRIVATE
+*
 * @desc current song object from list of songs
 * @type {Object}
 */
     SongPlayer.currentSong = null;
     
 /**
-*PUBLIC
+*
 * @function SongPlayer.play
 * @desc plays current song or new song
 * @params {object} song
@@ -89,7 +89,7 @@ PUBLIC
       }
     };
 /**
-*PUBLIC
+*
 * @function SongPlayer.pause
 * @desc pauses current song
 * @params {object} song
@@ -101,7 +101,7 @@ PUBLIC
       song.playing = false;
     };
 /**
-*PUBLIC
+*
 * @function SongPlayer.previous
 * @desc set song to previous
 */
@@ -119,7 +119,7 @@ PUBLIC
       }
     };
 /**
-*PUBLIC
+*
 * @function SongPlayer.next
 * @desc set song to next
 */
