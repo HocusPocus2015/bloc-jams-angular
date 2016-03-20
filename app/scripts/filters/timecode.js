@@ -2,6 +2,9 @@
   function timecode() {
     return functon(seconds) {
       var seconds = NUmber.parseFloat(seconds);
+      if (Number.isNan(seconds)) {
+        return '-:--';
+      }
       var wholeSeconds = Math.floor(seconds);
       var minutes = Math.floor(wholeSeconds / 60);
       var remainingSeconds = wholeSeconds % 60;
