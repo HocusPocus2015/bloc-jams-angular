@@ -162,7 +162,7 @@
       margin: 0 auto;
       padding: 0;
       width: 100%;
-      text-align: center;   
+      text-align: center;
   }
 
   .player-bar .main-controls {
@@ -177,7 +177,7 @@
       min-height: 3.5rem;
   }
 
-  .artist-name, 
+  .artist-name,
   .song-name {
       display: none;
   }
