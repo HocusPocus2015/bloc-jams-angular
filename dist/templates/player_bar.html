@@ -53,11 +53,11 @@
               ng-click="playerBar.songPlayer.pause()">
         </span>
       </a>
-      <a class="next">
+      <a class="next" ng-click="playerBar.songPlayer.next()">
         <span class="ion-skip-forward"></span>
       </a>
     </div>
-    
+<!-- here is issue-->
     <div class="control-group currently-playing">
       <h2 class="song-name">{{ playerBar.songPlayer.currentSong.name }}</h2>
       <h2 class="artist-song-mobile">{{ playerBar.songPlayer.currentSong.name }} - {{ playerBar.albumData.artist }}</h2>
