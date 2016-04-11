@@ -1,8 +1,8 @@
 (function() {
   function timecode() {
-    return functon(seconds){
+    return function(seconds){
       var seconds = Number.parseFloat(seconds);
-      if (Number.isNan(seconds)) {
+      if (Number.isNaN(seconds)) {
         return '-:--';
       }
       var wholeSeconds = Math.floor(seconds);
@@ -16,7 +16,7 @@
       output += remainingSeconds;
       return output;
     };
-  }
+  };
   
   angular
     .module('blocJams')
