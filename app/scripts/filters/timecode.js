@@ -1,7 +1,7 @@
 (function() {
   function timecode() {
-    return functon(seconds) {
-      var seconds = NUmber.parseFloat(seconds);
+    return functon(seconds){
+      var seconds = Number.parseFloat(seconds);
       if (Number.isNan(seconds)) {
         return '-:--';
       }
